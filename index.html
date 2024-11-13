@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustos que dan gusto</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<head>
+    <link rel="icon" href="images/logo-cutout.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo-cutout.png" alt="Logo" id="logo-img">
+            </div>
+            <h1 class="navbar-title">Sustos que dan gusto</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <style>
+        .carrusel {
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .carrusel-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 400%;
+        }
+        .carrusel-slide {
+            flex: 1 0 100%;
+        }
+        .carrusel-slide img {
+            width: 25%;
+            height: 85%;
+        }
+        .carrusel label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #ff0000;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .carrusel .prev {
+            left: 10px;
+        }
+        .carrusel .next {
+            right: 10px;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+     <section id="juegos" class="cards-container">
+        <h2>Juegos Destacados</h2>
+        
+        <div class="carrusel">
+            <div class="carrusel-slides" id="carrusel-slides">
+                <div class="carrusel-slide"><img src="images/the evil within.avif" alt="Silent Hill"></div>
+                <div class="carrusel-slide"><img src="images/dokidoki.avif" alt="Doki Doki Literature Club"></div>
+                <div class="carrusel-slide"><img src="images/baldi.webp" alt="Baldi's Basics"></div>
+                <div class="carrusel-slide"><img src="images/slender.jpg" alt="Slenderman"></div>
+                <div class="carrusel-slide"><img src="images/resident-evil-1_862x485.webp" alt="Resident Evil"></div>
+                <div class="carrusel-slide"><img src="images/outlast.jpg" alt="Outlast"></div>
+            </div>
+
+            <label class="prev" onclick="moverCarrusel(-1)">&#10094;</label>
+            <label class="next" onclick="moverCarrusel(1)">&#10095;</label>
+        </div>
+
+        <section id="inicio" class="hero">
+            <h1>Bienvenido a Sustos que dan gusto</h1>
+            <p>Explora los videojuegos más oscuros y aterradores.</p>
+        </section>
+    
+
+    <section id="juegos" class="cards-container">
+        <h2>Juegos Destacados</h2>
+        
+        
+        <div class="card">
+            <img src="images/silenciogil.jpg" alt="Silent Hill">
+            <h3>Silent Hill</h3>
+            <p>Una franquicia legendaria de terror psicológico.</p>
+        </div>
+
+         <div class="card">
+            <img src="images/dokidoki.avif" alt="Doki Doki Literature Club">
+            <h3>Doki Doki Literature Club</h3>
+            <p>Un juego que empieza dulce, pero te llevará a una oscuridad inesperada.</p>
+        </div>
+
+     
+        <div class="card">
+            <img src="images/baldi.webp" alt="Baldi's Basics">
+            <h3>Baldi's Basics</h3>
+            <p>Un horror educativo en un ambiente retro que te pondrá los pelos de punta.</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="images/slender.jpg" alt="Slenderman">
+            <h3>Slenderman</h3>
+            <p>Escapa del enigmático y espeluznante Slenderman en este icónico juego de terror.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/resident-evil-1_862x485.webp" alt="Resident Evil">
+            <h3>Resident Evil</h3>
+            <p>Sobrevive al horror y a los zombis.</p>
+        </div>
+        
+        <div class="card">
+            <img src="images/outlast.jpg" alt="Outlast">
+            <h3>Outlast</h3>
+            <p>Escapa del manicomio más aterrador.</p>
+        </div>
+        
+        <div class="card">
+            <img src="images/deadspace.jpg" alt="Dead Space">
+            <h3>Dead Space</h3>
+            <p>Una aventura espacial llena de terror y suspenso.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/amnesia.jpg" alt="Amnesia: The Dark Descent">
+            <h3>Amnesia: The Dark Descent</h3>
+            <p>El horror te sigue en todo momento.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/the evil within.avif" alt="The Evil Within">
+            <h3>The Evil Within</h3>
+            <p>Sumérgete en un mundo de pesadilla.</p>
+        </div>
+    </section>
+
+
+
+    </section>
+    <section id="consejos" class="tips-section">
+        <h2>Consejos para sobrevivir</h2>
+        <ul class="tips-list">
+            <li>Explora cada rincón, nunca sabes lo que puedes encontrar.</li>
+            <li>La munición y los recursos son limitados. ¡Úsalos con cuidado!</li>
+            <li>Mantén la calma cuando te sientas acorralado. Piensa rápido.</li>
+            <li>El sonido puede ser tu mejor aliado, o tu peor enemigo.</li>
+            <li>Juega con las luces apagadas para una experiencia inmersiva.</li>
+        </ul>
+    </section>
+
+    <section id="acerca" class="about-section">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos apasionados por los videojuegos de terror y hemos creado este sitio para compartir los mejores títulos y consejos para sobrevivir al miedo.</p>
+    </section>
+    <script>
+        let indiceActual = 0;
+
+        function moverCarrusel(direccion) {
+            const slides = document.getElementById("carrusel-slides");
+            const totalSlides = slides.children.length;
+            indiceActual = (indiceActual + direccion + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${indiceActual * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>

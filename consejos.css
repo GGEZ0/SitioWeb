@@ -1,0 +1,159 @@
+body {
+    background-color: #0c0c0c;
+    color: #790101; 
+    font-family: 'Cinzel', serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #0e0d0d; 
+    padding: 10px 20px;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-title {
+    color: #790101;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 20px;
+    font-family: 'Cinzel', serif;
+    margin-right: auto; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #790101; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #790101; 
+    transform: scale(1.1); 
+}
+
+.logo img {
+    height: 60px; 
+    transition: transform 0.3s ease; 
+}
+
+.logo img:hover {
+    transform: rotate(5deg); 
+}
+
+.consejos-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em; 
+    color: #790101; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    animation: fadeIn 1s ease; 
+}
+
+.consejo {
+    background-color: #3a3a3a; 
+    border-radius: 8px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease; 
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+}
+
+.consejo:nth-child(even) {
+    animation-delay: 0.1s; 
+}
+
+.consejo:nth-child(odd) {
+    animation-delay: 0.2s; 
+}
+
+h2 {
+    font-family: 'UnifrakturMaguntia', cursive; 
+    color: #790101; 
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+ul li {
+    margin-bottom: 10px; 
+    opacity: 0; 
+    animation: slideIn 0.5s forwards; 
+}
+
+ul li:nth-child(even) {
+    animation-delay: 0.1s; 
+}
+
+ul li:nth-child(odd) {
+    animation-delay: 0.2s; 
+}
+
+strong {
+    color: #790101; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; 
+    color: #f5f5f5; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; 
+        transform: translateX(-20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
